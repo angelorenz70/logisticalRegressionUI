@@ -27,7 +27,7 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h1 class="title" style="align:center; width: 500px">HEART DISEASE</h1>
+                    <h1 class="title" style="text-align:center;width: 500px">HEART DISEASE PREDICTION</h1>
                     <!--FORM-->
                     <form method="POST" action="prediction.php">
                         <div class="input-group">
