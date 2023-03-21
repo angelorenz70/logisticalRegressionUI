@@ -2,7 +2,7 @@
 // Get the inputs from the form
 						
 
-
+$Age = $_POST['Age'];
 $Diabetes_012= $_POST['Diabetes_012'];
 $HighBP = $_POST['HighBP'];
 $HighChol = $_POST['HighChol'];
@@ -14,7 +14,8 @@ $Stroke = $_POST['Stroke'];
 
 // Send a POST request to the Flask server
 $url = 'http://localhost:5000/predict';
-$data = array(			
+$data = array(		
+            'Age' => $Age,	
             'Diabetes_012' => $Diabetes_012,
             'HighBP' => $HighBP,
             'HighChol' => $HighChol,
@@ -75,7 +76,6 @@ if($result->prediction == 1){
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <div class="card-body">
                         <h1 class="title">Coronary Heart Disease</h1>
                         <h1><?php echo "Prediction: " . $result->prediction ?></h1><br>
                         <h1><?php echo "Probability: " . $result->probability . "%" ?></h1><br>
@@ -85,7 +85,6 @@ if($result->prediction == 1){
                             <button class="btn btn--radius btn--green" type="submit">Back</button>
                         </div>     
                     </form>
-                    </div>
                 </div>
             </div>
         </div>

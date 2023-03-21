@@ -31,6 +31,9 @@
                     <!--FORM-->
                     <form method="POST" action="prediction.php">
                         <div class="input-group">
+                            <input class="input--style-1" type="number" step="1" min="0" placeholder="Age" name="Age">
+                        </div>
+                        <div class="input-group">
                             <input class="input--style-1" type="number" step="1" min="0" max="2" placeholder="Diabetes" name="Diabetes_012">
                         </div>
                         <div class="input-group">
