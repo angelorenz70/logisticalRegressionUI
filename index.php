@@ -15,63 +15,41 @@
     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="css/main.css" rel="stylesheet" media="all">
+    <link href="css/main1.css" rel="stylesheet" media="all">
+
+    <!--ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
-<div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+    <div class="page-wrapper bg-blue p-t-20 p-b-100 font-robo">
         <div class="wrapper wrapper--w680">
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">PATIENTS HEART DISEASE PREDICTION</h2>
+                    <h2 class="title">HEART DISEASE OR HEART ATTACK</h2>
                     <!--FORM-->
                     <form method="POST" action="prediction.php">
                         <div class="input-group">
-                            <label for="">Gender:</label>
-                            <select class="input--style-1 form-control" name="gender">
-                                <option value="0">Male</option>
-                                <option value="1">Female</option>
-                            </select>
+                            <input class="input--style-1" type="number" step="1" min="0" max="2" placeholder="Diabetes" name="Diabetes_012">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="number" step="1" min="1" max="100" placeholder="AGE" name="age">
-                        </div>
-                        <!-- <div class="input-group">
-                            <label for=""><span>0 - MALE and 1 - FEMALE</span></label>
-                            <input class="input--style-1" type="number" step="1" min="0" max="1" placeholder="GENDER" name="gender">
-                        </div> -->
-                        <div class="input-group">
-                            <input class="input--style-1" type="number" step="1" min="0" max="3" placeholder="CHEST PAIN TYPE" name="chest_pain_type">
+                            <input class="input--style-1" type="number" step="1" min="0" max="1" placeholder="High Blood Pressure" name="HighBP">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="number" step="1" min="1" placeholder="RESTING BLOOD PRESSURE" name="resting_blood_pressure">
+                            <input class="input--style-1" type="number" step="1" min="0" max="1" placeholder="High Cholesterol" name="HighChol">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="number" step="1" min="1" placeholder="SERUM CHOLESTEROL" name="serum_cholesterol">
+                            <input class="input--style-1" type="number" step="1" min="0" max="1" placeholder="Cholesterol Check" name="CholCheck">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="number" step="1" min="0" max="1" placeholder="FASTING BLOOD SUGAR" name="fasting_blood_sugar">
+                            <input class="input--style-1" type="number" step="0.1" min="1" placeholder="Body Mass Index" name="BMI">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="number" step="1" min="0" max="1" placeholder="RESTING ELECTROCARDIOGRAPHIC RESULTS" name="resting_electrocardiographic_results">
+                            <input class="input--style-1" type="number" step="1" min="0" max="3" placeholder="Smoker" name="Smoker">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="number" step="1" min="1" placeholder="MAXIMUM HEART RATE ACHIEVED" name="maximum_heart_rate_achieved">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-1" type="number" step="1" min="0" max="1" placeholder="EXERCISE INDUCED ANGINA" name="exercise_induced_angina">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-1" type="number" step="0.01" min="0" placeholder="ST depression induced by exercise relative to rest" name="st_depression">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-1" type="number" step="1" min="0" max="2" placeholder="the slope of the peak exercise ST segmen" name="slope_st">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-1" type="number" step="1" min="0" max="3" placeholder="NUMBER OF MAJOR VESSELS" name="number_of_major_vessels">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-1" type="number" step="1" min="0" max="3" placeholder="THALASSEMIA" name="thalassemia">
+                            <input class="input--style-1" type="number" step="1" min="0" max="3" placeholder="Stroke" name="Stroke">
                         </div>
                         
                         <div class="p-t-20">
