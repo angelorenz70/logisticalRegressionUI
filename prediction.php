@@ -76,7 +76,7 @@ if($result->prediction == 1){
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                        <h1 class="title">Coronary Heart Disease</h1>
+                        <h1 class="title" style="width: 500px">Coronary Heart Disease</h1>
                         <h1><?php echo "Prediction: " . $result->prediction ?></h1><br>
                         <h1><?php echo "Probability: " . $result->probability . "%" ?></h1><br>
                         <h1><?php echo  $str_prediction ?></h1><br>
